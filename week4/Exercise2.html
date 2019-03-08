@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function calcBMI() {
+            var weight = parseInt(document.mass.weight.value);
+            var height = parseInt(document.mass.height.value);
+            var result;
+
+            result= (weight * 703) / (height * height);
+            document.mass.res.value = result;
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+<form name="mass">
+    Weight: <input type = "text" name="weight"><br>
+    Height: <input type="text" name = "height">
+    <input type = "button" value = "Calculate" onclick="calcBMI()">
+    Results: <input type="text" name = "res">
+
+</form>
+
+</body>
+</html>

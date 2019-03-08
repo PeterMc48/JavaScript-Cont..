@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function purchase(price)
+        {
+            let result;
+
+            (price < 25.00)
+            ? result = price + 1.50: result = price * .1 + price;
+
+            return result;
+        }
+    </script>
+</head>
+<body>
+
+
+<form name="shipping" action="" method="get">
+    Price: <input type="text" name="price" value = "">
+    <input type="button" value="submit" onclick="var res = purchase(parseInt(document.shipping.price.value));
+                                                document.shipping.shippingFee.value = res"><br>
+    Shipping Fee: <input type ="text" name="shippingFee">
+</form>
+
+</body>
+</html>

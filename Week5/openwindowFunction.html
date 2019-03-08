@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function openwindow() {
+
+
+            if(document.click.check.checked) {
+                window.open();
+                return false;
+            }
+            else
+                return true;
+        }
+
+    </script>
+<form name="click">
+    Open in new tab<input type="checkbox" name="check" />
+</form>
+<a href="http://www.google.ie" onclick="return openwindow()">Google</a><br>
+<a href="http://www.skySports.com" onclick="return openwindow()">SkySports</a><br>
+<a href="http://www.youtube.com" onclick="return openwindow()">YouTube</a>
+</body>
+</html>

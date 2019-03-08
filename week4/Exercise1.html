@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function calaPurchase() {
+            var price = parseInt(document.shipping.price.value);
+            var over25 = .1;
+            var min = 1.50;
+            var result;
+
+            (price <25.00)
+            ? result = price + min : result = price * over25 + price;
+            document.shipping.shippingFee.value = result;
+        }
+    </script>
+</head>
+<body>
+<form action="" method="get" name="shipping">
+    Purchase Price: <input type="text" name="price">
+    <input type="button" value="Submit" onclick="calaPurchase()"/><br>
+    Shipping fee: <input type="text" name = "shippingFee">
+</form>
+
+</body>
+</html>

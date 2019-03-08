@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function calcPay()
+        {
+            let hours = parseInt(document.calcWage.hours.value);
+            let rate = parseFloat(document.calcWage.rate.value);
+            let result;
+            let overhours = 60;
+
+            (hours < overhours)
+            ? result = hours * rate: result = rate * overhours;
+            document.calcWage.res.value=result;
+
+
+        }
+    </script>
+</head>
+<body>
+
+<form name = calcWage>
+    Hours: <input type="text" name="hours"><br>
+    Rate: <input type="text" name="rate"><br>
+    <input value ="Calculate Pay" type="button" onclick="calcPay()"/><br>
+    <input type="text" name="res">
+
+</form>
+
+</body>
+</html>
